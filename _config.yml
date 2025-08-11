@@ -1,0 +1,26 @@
+# Site settings
+title: "David Noh"
+description: "XR • Filmmaking • Photography"
+url: "" # set your domain if using a custom domain
+baseurl: ""
+
+# Use GitHub Pages dark theme (Slate)
+remote_theme: pages-themes/slate@v0.2.0
+plugins:
+  - jekyll-remote-theme
+
+# Navigation (custom data used in the layout)
+nav:
+  - title: Projects
+    url: /#projects
+  - title: Reel
+    url: /#reel
+  - title: About
+    url: /#about
+  - title: Contact
+    url: /#contact
+
+# SEO
+markdown: kramdown
+kramdown:
+  input: GFM
