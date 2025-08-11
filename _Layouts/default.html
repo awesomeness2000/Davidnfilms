@@ -1,1 +1,34 @@
-
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{{ page.title }} — {{ site.title }}</title>
+    {%- seo -%}
+    <style>
+      :root{
+        --bg:#0f1419; --fg:#e6edf3; --muted:#9fb1c1; --card:#131a21; --line:#22303c; --link:#58a6ff;
+      }
+      html,body{margin:0;background:var(--bg);color:var(--fg);font:16px/1.6 -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica,Arial}
+      a{color:var(--link);text-decoration:none}
+      .container{max-width:1050px;margin:0 auto;padding:24px}
+      header{border-bottom:1px solid var(--line);padding-bottom:8px;margin-bottom:18px}
+      h1{margin:0 0 4px}
+      #hero{padding:10px 0 18px;border-bottom:1px solid var(--line);margin-bottom:18px}
+      h2{margin:14px 0 6px}
+      h3{margin:10px 0 6px}
+      .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:14px}
+      .card{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:14px}
+      .video-embed{position:relative;padding-bottom:56.25%;height:0;border:1px solid var(--line);border-radius:12px;overflow:hidden}
+      .video-embed iframe{position:absolute;top:0;left:0;width:100%;height:100%}
+      footer{border-top:1px solid var(--line);margin-top:18px;padding-top:12px;color:var(--muted)}
+      ul{padding-left:18px}
+      nav a{margin-right:12px}
+    </style>
+  </head>
+  <body>
+    <main>
+      {{ content }}
+    </main>
+  </body>
+</html>
