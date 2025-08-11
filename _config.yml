@@ -1,7 +1,7 @@
 # Site settings
 title: "David Noh"
 description: "XR • Filmmaking • Photography"
-url: "" # set your domain if using a custom domain
+url: "davidnfilms.com" # set your domain if using a custom domain
 baseurl: ""
 
 # Use GitHub Pages dark theme (Slate)
